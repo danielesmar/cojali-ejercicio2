@@ -18,8 +18,8 @@ Esta es una aplicación en ReactJS con Vite que consume la API [Random User](htt
 
 1. **Clonar el repositorio**
    ```sh
-   git clone https://github.com/danielesmar/cojali-ejercicio1.git
-   cd cojali-ejercicio1
+   git clone https://github.com/danielesmar/cojali-ejercicio2.git
+   cd cojali-ejercicio2
    ```
 
 2. **Instalar dependencias**
