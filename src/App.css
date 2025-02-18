@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.contador{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: cornflowerblue;
+}
+
+/* Estilo para la clase action-button */
+.action-button {
+  display: flex;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+  gap: 5px; /* Separación de 5px entre los botones */
+}
+
+/* Estilo adicional para los botones */
+.action-button button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color: #3b82f6; /* Tailwind Blue 500 */
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button button:hover {
+  background-color: #2563eb; /* Tailwind Blue 600 */
+}
+
+.action-button .btn-restore:hover {
+  background-color: oklch(0.872 0.01 258.338); /* Tailwind Blue 600 */
+}
+
+.action-button .btn-restore {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color:white; /* Tailwind Blue 500 */
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+/* Estilo para la clase action-button */
+.action-button {
+  position: fixed; /* Fija los botones en la pantalla */
+  top: 20px; /* Posición desde el borde superior de la página */
+  right: 20px; /* Alinea los botones al borde derecho */
+  display: flex; /* Organiza los botones en fila */
+  gap: 10px; /* Separación entre los botones */
+  z-index: 1000; /* Asegura que los botones estén por encima de otros elementos */
+}
+
+/* Estilo de los botones */
+.action-button button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  background-color: #3b82f6; /* Tailwind Blue 500 */
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button button:hover {
+  background-color: #2563eb; /* Tailwind Blue 600 */
+}
