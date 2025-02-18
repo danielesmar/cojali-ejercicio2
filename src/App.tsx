@@ -3,6 +3,8 @@ import { fetchUsers } from "./application/FetchUsers";
 import { User } from "./domain/User";
 import UserTable from "./infrastructure/ui/reactComponents/UserTable";
 import ConfirmModal from './infrastructure/ui/reactComponents/ConfirmModal';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 
 import "./App.css";
 import UserModal from "./infrastructure/ui/reactComponents/UserModal";
@@ -65,8 +67,12 @@ const App: React.FC = () => {
             <h1 className="title">Lista de Usuarios </h1>
             <div className={"contador"}>Cantidad: {users.length}</div>
             <div className={"action-button"}>
-                <button onClick={handleAdd}>Añadir</button>
-                <button className={"btn-restore"} onClick={handleRestore}>Restaurar</button>
+                <button onClick={handleAdd} style={{ padding: "10px", fontSize: "16px", display: "flex", alignItems: "center", gap: "8px" }}>
+                    <FontAwesomeIcon icon={faPlus} /> Añadir
+                </button>
+                <button onClick={handleRestore} className={"btn-restore"}>
+                    <FontAwesomeIcon icon={faClockRotateLeft} />  Restaurar
+                </button>                                
             </div>            
             <UserTable users={users} onDelete={handleDeleteClick} onEdit={handleEdit} />
             {isConfirmOpen && (

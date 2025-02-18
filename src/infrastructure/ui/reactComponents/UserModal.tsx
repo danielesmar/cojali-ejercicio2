@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { User } from "../../../domain/User";
 import './UserModal.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFloppyDisk, faCancel } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
   user: User | null;
@@ -60,17 +62,11 @@ const UserModal: React.FC<Props> = ({ user, onSave, onClose }) => {
           className="input-field"
         />
         <div className="button-container">
-          <button
-            onClick={() => onSave(formData)}
-            className="button button-save"
-          >
-            Guardar
+          <button onClick={() => onSave(formData)} className={"button button-save"}>
+            <FontAwesomeIcon icon={faFloppyDisk} /> Guardar
           </button>
-          <button
-            onClick={onClose}
-            className="button button-cancel"
-          >
-            Cancelar
+          <button onClick={onClose} className={"button button-cancel"}>
+            <FontAwesomeIcon icon={faCancel} /> Cancelar
           </button>
         </div>
       </div>

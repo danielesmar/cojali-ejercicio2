@@ -13,8 +13,10 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({ onConfirm, onCancel, user }
         <div className="modal-confirm">
             <div className="modal-content-confirm">
                 <p>¿Estás seguro de que deseas eliminar a: {user!.name}?</p>
-                <button className={"delete-btn-confirm"} onClick={onConfirm}>Sí</button>
-                <button onClick={onCancel}>No</button>
+                <button className={"delete-btn-confirm"} onClick={onConfirm}>
+                    Si, Eliminar
+                </button>
+                <button onClick={onCancel}>Cancelar</button>
             </div>
         </div>
     );

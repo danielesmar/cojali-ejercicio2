@@ -1,7 +1,8 @@
 ﻿import React from "react";
 import { User } from "../../../domain/User";
 import "./UserTable.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPenToSquare, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 interface Props {
     users: User[];
     onDelete: (user: User) => void;
@@ -28,9 +29,13 @@ const UserTable: React.FC<Props> = ({ users, onDelete, onEdit }) => {
                         <td>{user.name}</td>
                         <td>{user.email}</td>
                         <td>{user.country}</td>
-                        <td>
-                            <button className={"edit-btn"} onClick={() => onEdit(user)}>Editar</button>
-                            <button className={"delete-btn"} onClick={() => onDelete(user)}>Eliminar</button>
+                        <td> 
+                            <button className={"edit-btn"} onClick={() => onEdit(user)}>
+                                <FontAwesomeIcon icon={faPenToSquare} />  Editar
+                            </button>
+                            <button className={"delete-btn"} onClick={() => onDelete(user)}>
+                                <FontAwesomeIcon icon={faTrashCan} />  Eliminar
+                            </button>
                         </td>
                     </tr>
                 ))}

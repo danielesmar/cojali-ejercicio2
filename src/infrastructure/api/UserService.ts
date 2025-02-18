@@ -1,4 +1,4 @@
-﻿import { User } from "../../core/domain/User";
+﻿import { User } from "../../domain/User";
 
 export class UserService {
     static async getUsers(): Promise<User[]> {
