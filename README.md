@@ -1,4 +1,4 @@
-# Ejercicio #1
+# Ejercicio #2
 
 Esta es una aplicación en ReactJS con Vite que consume la API [Random User](https://randomuser.me/) para mostrar una lista de 100 usuarios en una tabla paginada con la opción de eliminar usuarios.
 
@@ -63,11 +63,12 @@ Vite se ejecuta con los siguientes scripts:
 - `npm run preview` permite probar la versión de producción localmente.
 
 ## Funcionalidades
-- Obtiene 100 usuarios aleatorios de la API `https://randomuser.me/api/`
-- Muestra los usuarios en una tabla con columnas: Imagen, Nombre, Email, País y Acción
-- Opción para eliminar un usuario de la lista
-- Paginación de 10 usuarios por página
-- Estilos personalizados con CSS3
+1. Añadir un nuevo botón de editar antes del de eliminar
+2. Añadir dos nuevos botones fuera del listado: Añadir y Restaurar
+3. El botón de Restaurar restaurará los 100 usuarios originales
+4. El botón de Editar debe abrir un panel modal con una ficha de usuario rellena con sus datos
+5. El botón de Añadir debe abrir el mismo panel modal con la ficha vacía y debe permitir añadir
+un usuario nuevo al listado
 
 ## Estructura del Proyecto
 ```
